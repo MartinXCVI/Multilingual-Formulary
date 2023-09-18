@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------Google font "Open Sans" (weight: 400, 700) {font-family: 'Open Sans', sans-serif;}------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-------------------------------------------------------------------------------------------------------->
+    <!---------------Stylesheet---------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!----------------------------------------->
+    <title>Multilingual Formulary</title>
+</head>
+<body>
+    
+    <main id="principal">
+        <section id="container">
+            <!--Formulary--->
+            <form id="formu">
+                <!--Only fieldset-->
+                <fieldset>
+                    <!-------------Form title--------------->
+                    <legend id="form-title">Register</legend>
+                    <!----------Languages select list------------>
+                    <section id="lang-container" class="division">
+                        <label for="language" class="labels" id="lang-title">Language</label>
+                        <select id="language" >
+                            <option value="english">English</option>
+                            <option value="español">Español</option>
+                            <option value="deutsch">Deutsch</option>
+                            <option value="italiano">Italiano</option>
+                        </select>
+                    </section>
+                    <!------------------------------------------->
+                    <!------Username--------->
+                    <section class="division">
+                        <label for="user" class="labels" id="user-title">Username</label>
+                        <input type="text" id="user" class="input-box" required>
+                    </section>
+                    <!----------------------->
+
+                    <!-------Password-------->
+                    <section class="division">
+                        <label for="password" class="labels" id="pass-title">Password</label>
+                        <input type="password" id="password" class="input-box" required>
+                    </section>
+                    <!----------------------->
+
+                    <!-----Repeat Pass------->
+                    <section class="division">
+                        <label for="repeat" class="labels" id="repeat-title">Repeat Password</label>
+                        <input type="password" id="repeat" class="input-box" required>
+                        <strong><p id="valid-title"></p></strong>
+                    </section>
+                    <!----------------------->
+                    
+                    <!------------Terms & COnditions-------------->
+                    <section id="terms-container" class="division">
+                        <input type="checkbox" id="terms-checkbox" required>
+                        <label for="terms-checkbox" class="labels" id="terms-title">I accept the <strong><a href="#">terms and conditions</a></strong>.</label>
+                    </section>
+                    <!-------------------------------------------->
+                    <!-----------Submit button------------>
+                    <button id="submit-btn">Submit</button>
+                    <!------------------------------------>
+
+                </fieldset>
+                <!----------------->
+            </form>
+            <!-------------->
+        </section>
+
+    </main>
+<!---------JavaScript----------->
+<script src="js/App.js"></script>
+<!------------------------------>
+</body>
+</html>

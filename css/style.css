@@ -1,0 +1,255 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*--------------GENERAL CSS----------------*/
+
+body{
+    background-color: whitesmoke;
+    font-family: var(--OpenSansFont);
+}
+
+a {
+    color: #333;
+}
+
+/*-----------------------------------------*/
+
+/*-----------HOVER/FOCUS Effects-----------*/
+
+#language:hover, #submit-btn:hover, a:hover {
+    cursor: pointer;
+}
+
+.input-box:hover {
+    border-color: var(--firstColor);
+}
+
+#formu:hover {
+    box-shadow: 0em 0em 2em 1em #00000030;
+    transition: 0.5s linear;
+}
+
+/*-----------------------------------------*/
+
+/*---------------VARIABLES-----------------*/
+
+:root{
+    --OpenSansFont: 'Open Sans', sans-serif;
+    --firstColor: #66ff99;
+    --secondColor : #22ee66;
+    
+}
+
+/*-------------------320px----------------------*/
+
+@media all and (min-width: 320px) {
+
+    #principal {
+        width: 100%;
+        height: 100vh;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    #container {
+        width: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    #formu {
+        width: 80%;
+        background-color: #fff;
+        box-shadow: 0em 0em 1em #00000030;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    fieldset {
+        border-top: 0.2em solid var(--secondColor);
+    }
+
+    #form-title {
+        font-size: 1.3em;
+        font-weight: 700;
+        text-align: center;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-bottom: 1em;
+        color: var(--secondColor);
+    }
+
+    .division {
+        width: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+        margin-bottom: 0.5em;
+    }
+
+    .labels {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+
+    .input-box {
+        width: 100%;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+    #lang-container {
+        display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+    }
+
+    #lang-title {
+        margin-right: 0.3em;
+    }
+
+    #terms-container {
+        display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+    }
+
+    #terms-checkbox {
+        width: 5%;
+        margin-right: 0.2em;
+    }
+
+    label {
+        color: #333;
+    }
+
+    input, select {
+        width: 100%;
+        border: 0.1em solid var(--secondColor);
+        border-radius: 0.3em;
+    }
+
+    #valid-title {
+        font-size: 0.8em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #submit-btn {
+        background-color: var(--firstColor);
+        border: 0.2em solid var(--secondColor);
+        width: 100%;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        border-radius: 0.3em;
+        font-weight: 700;
+        color: #333;
+    }
+
+}
+
+/*-----------------END: 320px-------------------*/
+
+/*-------------------480px----------------------*/
+
+@media all and (min-width: 480px) {
+
+    #formu {
+        width: 70%;
+    }
+
+}
+
+/*-----------------END: 480px-------------------*/
+
+/*-------------------576px----------------------*/
+
+@media all and (min-width: 576px) {
+
+    #formu {
+        width: 65%;
+    }
+
+}
+
+/*-----------------END: 576px-------------------*/
+
+/*-------------------768px----------------------*/
+
+@media all and (min-width: 768px) {
+
+    #formu {
+        width: 50%;
+    }
+
+}
+
+/*-----------------END: 768px-------------------*/
+
+/*-------------------1024px----------------------*/
+
+@media all and (min-width: 1024px) {
+
+    #formu {
+        width: 40%;
+        padding: 1.5em;
+    }
+
+    #form-title {
+        font-size: 1.5em;
+    }
+
+    .division {
+        margin-bottom: 1em;
+    }
+
+    .labels {
+        font-size: 0.9em;
+    }
+
+    input, select {
+        border: 0.2em solid var(--secondColor);
+        border-radius: 0.3em;
+    }
+
+    #submit-btn {
+        border: 0.3em solid var(--secondColor);
+        font-size: 0.9em;
+    }
+
+}
+
+/*-----------------END: 1024px-------------------*/
+
+/*--------------------1200px---------------------*/
+
+@media all and (min-width: 1200px) {
+
+    #formu {
+        width: 35%;
+        padding-bottom: 1.75em;
+    }
+
+}
+
+/*------------------END: 1200px------------------*/
+
+/*--------------------1366px---------------------*/
+
+@media all and (min-width: 1366px) {
+
+    #formu {
+        width: 30%;
+    }
+
+}
+
+/*------------------END: 1366px------------------*/
+
+/*--------------------1440px---------------------*/
+
+@media all and (min-width: 1440px) {
+
+    #formu {
+        width: 25%;
+    }
+
+}
+
+/*------------------END: 1440px------------------*/
